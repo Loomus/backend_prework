@@ -2,4 +2,19 @@
 # person methods below the class so that they print their result to the
 # terminal.
 
-#YOUR CODE HERE
+class Person
+  attr_reader :name, :age
+  def initialize(name, age)
+    @name = name
+    @age = age
+  end
+
+  def full_name
+    p "Andrew Johnson"
+  end
+end
+
+me = Person.new("Andrew", "30")
+p me.name
+p me.age
+p me.full_name
